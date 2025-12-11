@@ -24,7 +24,7 @@ export function useComputerUse() {
     setError(null);
 
     try {
-      const response = await fetch('/api/computer-use/step', {
+      const response = await fetch('/.netlify/functions/computer-use-step', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

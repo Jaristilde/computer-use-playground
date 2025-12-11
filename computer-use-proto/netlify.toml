@@ -1,7 +1,10 @@
 [build]
-  base = "computer-use-proto"
   command = "npm run build"
   publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/*"
