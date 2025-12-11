@@ -1,0 +1,12 @@
+# Root ignores
+.env
+*.env.local
+
+# Node artifacts
+node_modules/
+dist/
+
+# Nested project outputs
+computer-use-proto/node_modules/
+computer-use-proto/dist/
+computer-use-proto/.env
