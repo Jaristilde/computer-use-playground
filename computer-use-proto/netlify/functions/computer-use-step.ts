@@ -98,13 +98,14 @@ export const handler: Handler = async (event) => {
     };
   } catch (error) {
     console.error('computer-use/step error', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return {
       statusCode: 500,
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ error: 'Internal server error' }),
+      body: JSON.stringify({ error: errorMessage }),
     };
   }
 };

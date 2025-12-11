@@ -10,3 +10,6 @@ dist/
 computer-use-proto/node_modules/
 computer-use-proto/dist/
 computer-use-proto/.env
+
+# Local Netlify folder
+.netlify
